@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Main page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media-quaries.css">
+    <link rel="stylesheet" type="text/css" href="css/pace.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+    <div class="main-slider">
+        <ul class="bxslider clearfix">
+        	<li>Slide 1</li>
+        	<li>Slide 2</li>
+        	<li>Slide 3</li>
+        	<li>Slide 4</li>
+        </ul>	
+    </div>
+    <div class="slider-btn-block"></div>
+    <div class="nav-block RBsticky-element">
+    	<div class="logo">Logo</div>
+    	<a href="#" id="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <nav class="main-navigation">
+    	    <ul>
+    		    <li><a href="#">Home</a></li>
+    		    <li><a href="#">Our work</a></li>
+    		    <li><a href="#">About us</a></li>
+    		    <li><a href="#">Contact</a></li>
+    	    </ul>
+        </nav>
+    </div>
+    <div class="work-block clearfix">
+        <h1 class="title">Our Work</h1>
+        <div class="indent">See Also Great Stuff on <a href="#">Dribbble</a>.</div>
+        <div id="options" class="btn-block">
+            <h2 class="title">Type of works</h2>
+            <div id="filters" class="button-group js-radio-button-group">
+                <button class="button is-checked" data-filter="*">All</button>    
+                <button class="button" data-filter=".icons">Icons</button> 
+                <button class="button" data-filter=".3d">3D</button> 
+                <button class="button" data-filter=".design">UX/UI</button> 
+                <button class="button" data-filter=".concepts">Concepts</button> 
+            </div>
+        </div>
+        <div class="isotope">
+            <div class="item icons">Icons</div>
+            <div class="item 3d">3D</div>
+            <div class="item design">UX/UI</div>
+            <div class="item concepts">Concepts</div>
+            <div class="item icons">Icons</div>
+            <div class="item 3d">3D</div>
+            <div class="item design">UX/UI</div>
+            <div class="item concepts">Concepts</div>
+            <div class="item icons">Icons</div>
+        </div>
+    </div>
+    <div class="about-us-block">
+        <h1 class="title">About Us</h1>
+        <p class="indent">The most important thing to us is building products people love.</p>
+        <div class="items-block">
+            <div class="item">
+                <div class="photo viewport">
+                    <a href="#">
+                         <span class="dark-background">Cto / founder</span> 
+                        <img src="img/image-1.jpg">
+                    </a>
+                </div>
+                <div class="name">John Doe</div>
+                <p class="indent">Our work was redesigning the outdated user interface of Rotix, a puzzle game. We used simple, bright colors and a clean approach to produce a stunning, pixel-perfect UI.</p>
+                <div class="social-btn">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="photo viewport">
+                    <a href="#">
+                        <span class="dark-background">Lead designer</span>
+                        <img src="img/image-2.jpg">
+                    </a>    
+                </div>
+                <div class="name">Jane Helf</div>
+                <p class="indent">Our work was redesigning the outdated user interface of Rotix, a puzzle game. We used simple, bright colors and a clean approach to produce a stunning, pixel-perfect UI.</p>
+                <div class="social-btn">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="photo viewport">
+                    <a href="#">
+                        <span class="dark-background">Creative director</span>
+                        <img src="img/image-3.jpg">
+                    </a>    
+                </div>
+                <div class="name">Joshua Insanus</div>
+                <p class="indent">Our work was redesigning the outdated user interface of Rotix, a puzzle game. We used simple, bright colors and a clean approach to produce a stunning, pixel-perfect UI.</p>
+                <div class="social-btn">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-block">
+        <h1 class="title">Get in Touch</h1>
+        <p class="indent">We’re currently accepting new client projects. Think we might help? We’d love to hear from you. </p>
+        <div class="form-block clearfix">
+            <form class="feedback-form" action="#" method="post">
+                <input type="text"  name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="Your Message" cols="40" rows="6"></textarea>
+                <button class="submit" type="submit">Submit</button>   
+            </form>
+            <div class="contact-detalis">
+                <h2 class="title">Contact Details</h2>
+                <ul>
+                    <li>info@creativeda.sh</li>
+                    <li>(916) 378-4475</li>
+                    <li>Creativedash 5701 Lonetree Blvd. 105Rocklin, CA 95765</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="random-block"></div>
+    <footer class="main-footer">
+        <div class="footer-social">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-copyright">
+            &#169 Lorem ipsum <a href="#">dolor sit</a> amet. consectetur <a href="#">adipiscing</a> elit
+        </div>
+    </footer>
+</body>
+</html>

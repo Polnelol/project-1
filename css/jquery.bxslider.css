@@ -1,0 +1,89 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bx-wrapper {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 300px;
+  padding-top: 300px;
+  background-color: #1B1D20
+}
+.bx-wrapper img {
+  width: 94%;
+  max-width: 94%;
+  margin-right: 6%;
+  display: block;
+}
+.bx-pager {
+  bottom: -340px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 20px;
+}
+.bx-pager-item {
+  display: inline-block;
+  margin: 0 auto;
+}
+.bx-pager-link {
+  outline: none;
+  text-indent: -9999px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #6E7074;
+}
+a{
+  transition: 0.3s;
+}
+a.active {
+  background: #DE5E60;
+}
+.bx-pager-link:hover {
+  background: #fff;
+}
+.bx-prev, .bx-next {
+  text-decoration: none;
+  position: absolute;
+  bottom: -50px;
+  margin-top:-25px;
+  background: #26292E;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.bx-prev:hover, .bx-next:hover {
+  background: #DE5E60;
+}
+
+.bx-wrapper:hover .bx-prev, .bx-wrapper:hover .bx-next, .bx-wrapper:hover .bx-prev:active, .bx-wrapper:hover .bx-next:active {
+  opacity: 1;
+}
+.bx-prev {
+  left: 0px;
+}
+.bx-next {
+  left: 51px;
+}
+.bx-prev:before, .bx-next:before {
+  font-family: "FontAwesome";
+  font-size: 25px;
+  line-height: 52px;
+}
+.bx-prev:before {
+  content: "\f104";
+}
+.bx-next:before {
+  content: "\f105";
+}
